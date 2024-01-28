@@ -1,10 +1,10 @@
-import { createBrowserRouter } from "react-router-dom";
+import { createBrowserRouter } from 'react-router-dom';
 
-import Home from "../shared/pages/Home";
+import Home from '../shared/pages/Home';
 
 const pagesRoutes = [
   {
-    path: "/",
+    path: '/',
     element: <Home />,
   },
 ];

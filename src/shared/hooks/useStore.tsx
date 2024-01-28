@@ -1,12 +1,13 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from 'react';
 
-export default function useStore(key = "", initialState = '') {
+export default function useStore(key = '', initialState = '') {
   const [state, setState] = useState(() => {
     const storage = localStorage.getItem(key);
     if (storage) {
-      return JSON.parse(storage);
+      JSON.parse(storage);
+    } else {
+      initialState;
     }
-    return initialState;
   });
 
   useEffect(() => {
